@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --grey: rgb(205, 208, 214);
+    --red: #ff0000a6;
+    --rbr: rgb(189, 182, 231);
+    --sf:rgb(231, 182, 182);
+    --mcl:rgb(231, 211, 182);
+    --mp:rgb(182, 224, 231);
+    --am:rgb(182, 231, 194);
+    --rb:rgb(182, 189, 231);
+    --haas:rgb(219, 219, 219);
+    --alp:rgb(182, 202, 231);
+    --wil:rgb(182, 207, 231);
+    --sks: rgb(185, 231, 182);
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    padding: 1vh;
+    background-color: var(--grey);
+}
+.logo {
+    height: 4vh;
+}
+
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 78vh;
+    padding: 15vh 20vw;
+}
+.pesquisa > h1 {
+    font-size: 9.6vh;
+    text-shadow: 0.4vh 0.4vh var(--red);
+    font-family: 'Bebas Neue';
+}
+.pesquisa > input {
+    height: 9.4vh;
+    width: 42vw;
+    font-size: 3vh;
+    padding: 1vh;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+}
+.pesquisa > button {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    width: 12vw;
+    font-size: 3.6vh;
+    border-radius: 10vh;
+    border: solid black 0.6px;
+    transition: 0.5s;
+    background-color: rgb(247, 228, 228);
+}
+button:hover {
+    cursor: pointer;
+    font-size: 3.9vh;
+    background-color: var(--red);
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.card {
+    height: 53vh;
+    width: 50vw;
+    border: 0.76px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--grey);
+}
+.item {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+#fotoEquipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto {
+    height: auto;
+    width: 25vw;
+}
+img > a {
+    height: 100%;
+    width: 100%;
+}
+img.insta:hover{
+    transform: scale(1.09);
+}
+.insta {
+    transition: 0.3s;
+    cursor: pointer;
+    height: 4vh;
+    width: 4vh;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    padding: 1vh;
+    background-color: var(--grey);
+}
